@@ -17,8 +17,11 @@ redirect_from:
 </figure>
 
 ### Recent News:
-
-{% for i in (1...10) %}
-  - {{ i }}
+{% for news in site.news%}
+   <ul>
+   {% assign all_news = news.content | newline_to_br | split: '<br />' %} 
+   {% for single in all_news limit:10 %}
+   <li>   {{ single }}
+   {% endfor %}
 {% endfor %}
-
+   

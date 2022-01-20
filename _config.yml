@@ -1,11 +1,5 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
 # Site Settings
+
 locale                   : "en-US"
 title                    : "LAIR"
 title_separator          : ": "
@@ -181,27 +175,42 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  phd:
     output: true
     permalink: /:collection/:path/
-  talks:
+  researcher:
     output: true
     permalink: /:collection/:path/
+  prof:
+    output: true
+    permalink: /:collection/:path/
+  ongoing_thesis:
+    output: true
+    permalink: /:collection/:path/
+  completed_thesis:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
+    
 
 
 # Defaults
 defaults:
-  # _posts
+   # _people
   - scope:
       path: ""
-      type: posts
+      type: people
     values:
       layout: single
       author_profile: false
-      read_time: true
-      comments: true
       share: true
-      related: true
+      comments: true
+      
   # _pages
   - scope:
       path: ""
@@ -255,7 +264,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Amsterdam # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
