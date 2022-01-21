@@ -2,6 +2,7 @@
 collection: projects
 permalink: /projects/ongoing
 name: Ongoing
+limit: 5
 ---
 Open Deep Learning Toolkit for Robotics [(OpenDR)](https://opendr.eu/)
 AI for Retail Lab Delft [(AIRLab)](https://opendr.eu/)
