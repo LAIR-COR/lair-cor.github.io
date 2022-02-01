@@ -1,0 +1,32 @@
+---
+collection: journal
+permalink: /journal/
+limit: 27
+---
+Jihong Zhu, Andrea Cherubini, Claire Dune, David Navarro-Alarcon, Farshid Alambeigi, Dmitry Berenson, Fanny Ficuciello, Kensuke Harada, Jens Kober, Xiang Li, Jia Pan, Wenzhen Yuan, and Michael Gienger. Challenges and Outlook in Robotic Manipulation of Deformable Objects. IEEE Robotics & Automation Magazine, 2022. [bibtex] [pdf] [url]
+Osama Mazhar, Robert Babuška, and Jens Kober. GEM: Glare or Gloom, I Can Still See You – End-to-End Multimodal Object Detector. IEEE Robotics and Automation Letters, 6(4):6321–6328, 2021. The contents of this paper were also selected by IROS'21 Program Committee for presentation at the Conference. [bibtex] [pdf] [doi]
+Padmaja Kulkarni, Jens Kober, Robert Babuška, and Cosimo Della Santina. Learning Assembly Tasks in a Few Minutes by Combining Impedance Control and Residual Recurrent Reinforcement Learning. Advanced Intelligent Systems, 2021. [bibtex] [file] [doi] [video]
+Tom C.T. van Riet, Kevin T.H. Chin Jen Sem, Jean-Pierre T.F. Ho, René Spijker, Jens Kober, and Jan de Lange. Robot Technology in Dentistry, Part Two of a Systematic Review: An Overview of Initiatives. Dental Materials, 37(8):1227–1236, 2021. [bibtex] [url] [doi]
+Tom C.T. van Riet, Kevin T.H. Chin Jen Sem, Jean-Pierre T.F. Ho, René Spijker, Jens Kober, and Jan de Lange. Robot Technology in Dentistry, Part One of a Systematic Review: Literature Characteristics. Dental Materials, 37(8):1217–1226, 2021. [bibtex] [url] [doi]
+Fabio Bonsignorio, David Hsu, Matthew Johnson-Roberson, and Jens Kober. Deep Learning and Machine Learning in Robotics [From the Guest Editors]. IEEE Robotics & Automation Magazine, 27(2):20–21, 2020. [bibtex] [url] [doi]
+Rodrigo Pérez-Dattari, Carlos E. Celemin, Giovanni Franzese, Javier Ruiz-del-Solar, and Jens Kober. Interactive Learning of Temporal Features for Control: Shaping Policies and State Representations From Human Feedback. IEEE Robotics & Automation Magazine, 27(2):46–54, 2020. [bibtex] [pdf] [doi] [code] [video]
+Simon Manschitz, Michael Gienger, Jens Kober, and Jan Peters. Learning Sequential Force Interaction Skills. Robotics, 9(2):45, 2020. [bibtex] [pdf] [doi]
+X. Chen, X. Tan, G. Berselli, X. Chen, G. Clayton, S. Jeon, H. R. Karimi, S. Katsura, J. Kober, C.-C. Lan, A. Leonessa, Z. Li, G. Liu, D. Oetomo, K. Oldham, Y.-J. Pan, T. Shimono, T. Sun, M. Tavakoli, J. Ueda, H. Vallery, Q. Xu, J. Yi, L. Zhang, and L. Zuo. Guest Editorial: Focused Section on Inaugural Edition of TMECH/AIM Emerging Topics. IEEE/ASME Transactions on Mechatronics, 25(4):1695-1697, 2020. [bibtex] [file] [doi]
+Carlos E. Celemin, Guilherme Maeda, Javier Ruiz-del-Solar, Jan Peters, and Jens Kober. Reinforcement Learning of Motor Skills using Policy Search and Human Corrective Advice. International Journal of Robotics Research, 38(14):1560–1580, 2019. [bibtex] [pdf] [doi] [video]
+Carlos E. Celemin, Javier Ruiz-del-Solar, and Jens Kober. A Fast Hybrid Reinforcement Learning Framework with Human Corrective Feedback. Autonomous Robots, 43(5):1173–1186, 2019. [bibtex] [pdf] [doi] [video]
+Yudha Prawira Pane, Subramanya Prasad Nageshrao, Jens Kober, and Robert Babuška. Reinforcement Learning Based Compensation Methods for Robot Manipulators. Engineering Applications of Artificial Intelligence, 78:236–247, 2019. [bibtex] [pdf] [doi] [video]
+Lucian Buşoniu, Tim de Bruin, Domagoj Tolić, Jens Kober, and Ivana Palunko. Reinforcement Learning for Control: Performance, Stability, and Deep Approximators. Annual Reviews in Control, 46:8–28, 2018. [bibtex] [pdf] [doi]
+Simon Manschitz, Michael Gienger, Jens Kober, and Jan Peters. Mixture of Attractors: A Novel Movement Primitive Representation for Learning Motor Skills From Demonstrations. IEEE Robotics and Automation Letters, 3(2):926–933, 2018. [bibtex] [pdf] [doi] [video]
+Tim de Bruin, Jens Kober, Karl Tuyls, and Robert Babuška. Integrating State Representation Learning into Deep Reinforcement Learning. IEEE Robotics and Automation Letters, 3(3):1394–1401, 2018. The contents of this paper were also selected by ICRA'18 Program Committee for presentation at the Conference. [bibtex] [pdf] [doi]
+Tim de Bruin, Jens Kober, Karl Tuyls, and Robert Babuška. Experience Selection in Deep Reinforcement Learning for Control. Journal of Machine Learning Research, 19(9):1–56, 2018. [bibtex] [pdf] [html] [code] [video]
+Tom Cornelis Theodorus van Riet, Jens Kober, and Jan de Lange. Robottechnologie, is er een toekomst voor in de tandheelkunde? Quality Practice Tandheelkunde 12(5):30–35, 2017. [bibtex] [url]
+Simon Manschitz, Jens Kober, Michael Gienger, and Jan Peters. Learning Movement Primitive Attractor Goals and Sequential Skills from Kinesthetic Demonstrations. Robotics and Autonomous Systems, 74(Part A):97–107, 2015. [bibtex] [pdf] [doi] [video]
+Jens Kober. Learning Motor Skills: From Algorithms to Robot Experiments. it - Information Technology, 56(3):141–146, 2014. [bibtex] [doi]
+Jens Kober, J. Andrew Bagnell, and Jan Peters. Reinforcement Learning in Robotics: A Survey. International Journal of Robotics Research, 32(11):1238–1274, 2013. [bibtex] [pdf] [doi]
+Katharina Muelling, Jens Kober, Oliver Kroemer, and Jan Peters. Learning to Select and Generalize Striking Movements in Robot Table Tennis. International Journal of Robotics Research, 32(3):263–279, 2013. [bibtex] [pdf] [doi] [video]
+Jens Kober, Andreas Wilhelm, Erhan Oztop, and Jan Peters. Reinforcement Learning to Adjust Parametrized Motor Primitives to New Situations. Autonomous Robots, 33(4):361–379, 2012. [bibtex] [pdf] [doi] [video]
+Jens Kober and Jan Peters. Policy Search for Motor Primitives in Robotics. Machine Learning, 84(1-2):171–203, 2011. [bibtex] [pdf] [doi] [code] [video]
+Katharina Muelling, Jens Kober, and Jan Peters. A Biomimetic Approach to Robot Table Tennis. Adaptive Behavior, 19(5):359–376, 2011. [bibtex] [pdf] [doi] [video]
+Jan Peters, Jens Kober, and Stefan Schaal. Policy Learning Algorithmis for Motor Learning (Algorithmen zum automatischen Erlernen von Motorfähigkigkeiten). at - Automatisierungstechnik, 58(12):688–694, 2010. [bibtex] [pdf] [doi]
+Jens Kober and Jan Peters. Imitation and Reinforcement Learning - Practical Algorithms for Motor Primitive Learning in Robotics. IEEE Robotics & Automation Magazine, 17(2):55–62, 2010. [bibtex] [pdf] [doi] [code] [video]
+Jens Kober and Jan Peters. Reinforcement Learning für Motor-Primitive. Künstliche Intelligenz, 9(3):38–40, 2009. [bibtex] [pdf] [html]

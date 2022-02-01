@@ -197,7 +197,19 @@ collections:
     output: true
     permalink: /:collection/:path/
     
-
+  journal:
+    output: true
+    permalink: /:collection/:path/
+  conference:
+    output: true
+    permalink: /:collection/:path/
+  preprints:
+    output: true
+    permalink: /:collection/:path/
+  others:
+    output: true
+    permalink: /:collection/:path/
+  
 
 # Defaults
 defaults:
