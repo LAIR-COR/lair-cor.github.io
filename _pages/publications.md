@@ -10,13 +10,13 @@ author_profile: false
 
 {% assign journals_by_date = site.journal | sort: "year" %}
 {% for j in journals_by_date reversed %}
-  * {{ j.author }}, [**{{ j.title }}**]({{j.permalink}}), *{{ j.avenue}}*, {{j.year}} 
+  * {{ j.author }}, [**{{ j.title }}**]({{j.permalink}}), *{{ j.avenue}}*, {{j.year}}. {%unless j.video=="" or j.video == null%}  [video]({{j.video}}) {%    endunless %}
 {% endfor %}
 
 <h2> Conference Papers </h2>
 {% assign conferences_by_date = site.conference | sort: "year" %}
 {% for c in conferences_by_date reversed %}
-  * {{ c.author }}, [**{{ c.title }}**]({{c.permalink}}), *{{ c.avenue}}*, {{c.year}} 
+  * {{ c.author }}, [**{{ c.title }}**]({{c.permalink}}), *{{ c.avenue}}*, {{c.year}}  {%unless c.video=="" or c.video == null%}  [video]({{c.video}}) {%    endunless %}
 {% endfor %}
 
 

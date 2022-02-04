@@ -1,8 +1,8 @@
 ---
 title: "I.S.P. Marta Ferraz da Conceicao"
 collection: researcher
-permalink: /people/martha
+permalink: /people/marta
 weburl: 'https://www.tudelft.nl/staff/m.ferraz/'
-image: ../images/defaultProfile.jpg
+image: ../images/marta.jpg
 contact: m.ferraz@tudelft.nl
 ---

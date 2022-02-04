@@ -9,6 +9,6 @@ avenue: Advanced Intelligent Systems
 url:  
 pages:  
 code:  
-video: https://www.authorea.com/doi/full/10.22541/au.162671181.19429485 
+video: "https://www.authorea.com/doi/full/10.22541/au.162671181.19429485" 
 abstract: 
 ---

@@ -6,7 +6,6 @@ author_profile: false
 ---
 {% include base_path %}
 
-
 <!--
 gallery:
   - url: /images/defaultProfile.jpg
@@ -29,25 +28,17 @@ gallery:
 
 <div class="photo-gallery">
     {% for person in site.prof %}
-       <div class="box">
-           <img src="{{ person.image }}" alt="{{ person.title}}" style="width:200px;border-radius:50%" class="img-gallery" />
-           <figcaption>{{ person.title}} </figcaption>
-           <figcaption> {{person.contact}} </figcaption>
-       </div>
+           <a href="{{ person.permalink }}"> <img src="{{ person.image }}" alt="{{ person.title}}" style="width:300px;border-radius:50%" class="img-gallery" /> </a>
        
     {% endfor %}
 </div>
 
-<h2> Researcher and Postdocs </h2>
+<h2> Researchers and Postdocs </h2>
     
 <div class="photo-gallery">
     {% for person in site.researcher %}
-       <div class="box">
-           <img src="{{ person.image }}" alt="{{ person.title}}" style="width:200px;border-radius:50%" class="img-gallery" />
-           <figcaption>{{ person.title}} </figcaption>
-           <figcaption> {{person.contact}} </figcaption>
-       </div>
-       
+           <img src="{{ person.image }}" alt="{{ person.title}}" style="width:240px;border-radius:50%;margin:20px" class="img-gallery" />
+               
     {% endfor %}
 </div>
 
@@ -56,15 +47,27 @@ gallery:
 <div class="gallery">
 
     {% for person in site.phd %}
+           <a href="{{ person.permalink }}"> <img src="{{ person.image }}" alt="{{ person.title}}" style="width:240px;border-radius:50%;margin:10px" class="img-gallery" /> </a>
+    {% endfor %}  
+</div>
+
+
+<!-- old 
+<div class="photo-gallery">
+    {% for person in site.researcher %}
        <div class="box">
            <img src="{{ person.image }}" alt="{{ person.title}}" style="width:200px;border-radius:50%" class="img-gallery" />
-           <figcaption>{{ person.title}} </figcaption>
-           <figcaption> {{person.contact}} </figcaption>
+           <figcaption>{{ person.title}} <br /> {{person.contact}} </figcaption>
        </div>
        
     {% endfor %}
 </div>
+-->
+<!--
+{% include my-gallery.html folder="myfolder/img" %}
 
+
+{% include my-gallery2.html folder="myfolder" %}
 
 <!--
 

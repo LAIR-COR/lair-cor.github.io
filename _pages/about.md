@@ -21,7 +21,7 @@ redirect_from:
    <ul>
    {% assign all_news = news.content | newline_to_br | split: '<br />' %} 
    {% for single in all_news limit:10 %}
-   <li>   {{ single }}
+   <li>   {{ single | remove: "</p>"}}
    {% endfor %}
 {% endfor %}
    
