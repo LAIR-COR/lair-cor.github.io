@@ -3,6 +3,8 @@ collection: news
 permalink: /news/
 name: news
 ---
+**new journal paper** Jihong Zhu, Michael Gienger, and Jens Kober. Learning Task-Parameterized Skills from Few Demonstrations. IEEE Robotics and Automation Letters, 2022.
+**new journal paper** Jihong Zhu, Andrea Cherubini, Claire Dune, David Navarro-Alarcon, Farshid Alambeigi, Dmitry Berenson, Fanny Ficuciello, Kensuke Harada, Jens Kober, Xiang Li, Jia Pan, Wenzhen Yuan, and Michael Gienger. Challenges and Outlook in Robotic Manipulation of Deformable Objects. IEEE Robotics & Automation Magazine, 2022.
 **ICRA2022 Tutorial accepted**: [Tools for Robotic Reinforcement Learning: Hands-on RL for Robotics with EAGER and Stable-Baselines3](https://araffin.github.io/tools-for-robotic-rl-icra2022/) accepted.
 **Podcast (in Dutch)**: [Career Advice for Robots](https://www.tudelft.nl/over-tu-delft/strategie/vision-teams/robotics-vision-team/robots-at-work)
 **new preprint**: Anna Mészáros, Giovanni Franzese, and Jens Kober. *Teaching Robots to Grasp Like Humans: An Interactive Approach*.
