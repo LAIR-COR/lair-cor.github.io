@@ -2,7 +2,7 @@
 collection: other
 permalink: /publications/Peters2016Handbook
 pubtype: other 
-title: "Springer Handbook of Robotics, 2\textsuperscript{nd} Edition" 
+title: "Springer Handbook of Robotics, 2nd Edition" 
 author: "Peters, Jan and Lee, Daniel D. and Kober, Jens and Nguyen-Tuong, Duy and Bagnell, Drew and Schaal, Stefan" 
 year: 2016
 avenue:  

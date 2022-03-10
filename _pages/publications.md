@@ -10,7 +10,7 @@ author_profile: false
 
 {% assign journals_by_date = site.journal | sort: "year" %}
 {% for j in journals_by_date reversed %}
-  * {{ j.author }}, [**{{ j.title }}**]({{j.permalink}}), *{{ j.avenue}}*, {{j.year}}. {%unless j.video=="" or j.video == null%}  [video]({{j.video}}) {%    endunless %}
+  * {{ j.author }}, [**{{ j.title }}**] ({{j.permalink}}), *{{ j.avenue}}*, {{j.year}}. {%unless j.video=="" or j.video == null%}  [video]({{j.video}}) {%    endunless %}
 {% endfor %}
 
 <h2> Conference Papers </h2>
