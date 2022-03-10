@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Thesis"
-permalink: /thesis/
+title: "Theses"
+permalink: /theses/
 author_profile: false
 ---
 {% include base_path %}
@@ -31,7 +31,7 @@ author_profile: false
 
 <p>If you are interested in working on a project with us, please send us ca. 1 academic quarter before the intended starting date an e-mail including:</p>
 
-*  a short CV (½ - 1 page
+*  a short CV (½ - 1 page)
 *  BSc &amp; MSc transcripts
 *  a short motivation letter
 *  BSc thesis (PDF)
@@ -46,20 +46,33 @@ author_profile: false
 *  your relevant experience (studies, technical projects, internships, hobbies, etc.)
 *  programming languages and related (Python, C, C++, ROS, etc.)
 
-<h2> Ongoing Thesis </h2>
-{% for thesis in site.ongoing_thesis %}
-  *  **{{ thesis.student }}**  Mentor(s): {{ thesis.mentors }}  <br> *"{{ thesis.topic }}"*
+<h2> Ongoing Theses </h2>
+{% assign theses_by_date = site.thesis_ongoing | sort: "date" %}
+{% for thesis in theses_by_date reversed %}
+  *  **{{ thesis.student }}** <br> Mentor(s): {{ thesis.mentors }}  <br> *"{{ thesis.topic }}"*
+{% endfor %}
+  
+
+<h2> Completed Theses </h2>
+{% assign theses_by_date = site.thesis_completed | sort: "date" %}
+{% for thesis in theses_by_date reversed %}
+   * [{{ thesis.topic }}]({{ thesis.urllink }}) <br> Student: {{ thesis.student }} <br> Mentor(s): <em>{{ thesis.mentors }}</em>
 {% endfor %}
 
-<h2> Completed Thesis </h2>
-
-{% for thesis in site.completed_thesis %}
-   {% assign thesis_entries = thesis.content | newline_to_br | split: '<br />' %}
-   <ul>
-   {% for thesis_entry in thesis_entries %}
-        {{thesis_entry}}
-        
+<!-- <table>
+   <tr>
+      <td> Student </td>
+      <td> Thesis Topic </td>
+      <td> Mentor(s) </td>
+   </tr>
+   {% for thesis in site.thesis_completed %}
+   <tr>
+      <td> {{ thesis.student }}</td>
+      <td> 
+          {{ thesis.topic }} 
+      </td>
+      <td> {{ thesis.mentors }}</td>
+   </tr>   
    {% endfor %}
-   </ul>
-{% endfor %}
-
+</table>
+-->

@@ -184,10 +184,10 @@ collections:
   prof:
     output: true
     permalink: /:collection/:path/
-  ongoing_thesis:
+  thesis_ongoing:
     output: true
     permalink: /:collection/:path/
-  completed_thesis:
+  thesis_completed:
     output: true
     permalink: /:collection/:path/
   projects:
