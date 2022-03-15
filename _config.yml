@@ -196,6 +196,9 @@ collections:
   news:
     output: true
     permalink: /:collection/:path/
+  projects_ongoing:
+    output: true
+    permalink: /:collection/:path/
     
   journal:
     output: true
