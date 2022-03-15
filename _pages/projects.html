@@ -1,0 +1,19 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: false
+---
+
+{% include base_path %}
+
+<h2>Ongoing Projects</h2>
+{% for post in site.projects_ongoing reversed %}
+  {% include archive-single-projects.html %}
+{% endfor %}
+
+
+<h2>Completed Projects</h2>
+{% for post in site.projects_completed reversed %}
+{% include archive-single-projects.html %}
+{% endfor %}
