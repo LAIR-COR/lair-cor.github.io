@@ -47,16 +47,20 @@ author_profile: false
 *  programming languages and related (Python, C, C++, ROS, etc.)
 
 <h2> Ongoing Theses </h2>
-{% assign theses_by_date = site.thesis_ongoing | sort: "date" %}
+{% assign theses_by_date = site.thesis | where: "status", "ongoing" | sort: "date" %}
 {% for thesis in theses_by_date reversed %}
   *  **{{ thesis.student }}** <br> Mentor(s): {{ thesis.mentors }}  <br> *"{{ thesis.topic }}"*
 {% endfor %}
   
 
 <h2> Completed Theses </h2>
-{% assign theses_by_date = site.thesis_completed | sort: "date" %}
+{% assign theses_by_date = site.thesis | where: "status", "completed" |sort: "date" %}
 {% for thesis in theses_by_date reversed %}
-   * [{{ thesis.topic }}]({{ thesis.urllink }}) <br> Student: {{ thesis.student }} <br> Mentor(s): <em>{{ thesis.mentors }}</em>
+    {% if thesis.urllink%}
+        * [{{ thesis.topic }}]({{ thesis.urllink }}) <br> Student: {{ thesis.student }} <br> Mentor(s): <em>{{ thesis.mentors }}</em>
+    {% else %}
+        * {{ thesis.topic }} <br> Student: {{ thesis.student }} <br> Mentor(s): <em>{{ thesis.mentors }}</em>
+    {% endif %}
 {% endfor %}
 
 <!-- <table>
