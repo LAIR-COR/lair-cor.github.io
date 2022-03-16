@@ -7,13 +7,16 @@ author_profile: false
 
 {% include base_path %}
 
+{% assign ongoing_projects = site.projects | where: "status", "ongoing" %}
+{% assign completed_projects = site.projects | where: "status", "completed" %}
+
 <h2>Ongoing Projects</h2>
-{% for post in site.projects_ongoing reversed %}
+{% for post in ongoing_projects %}
   {% include archive-single-projects.html %}
 {% endfor %}
 
 
 <h2>Completed Projects</h2>
-{% for post in site.projects_completed reversed %}
+{% for post in completed_projects %}
 {% include archive-single-projects.html %}
 {% endfor %}

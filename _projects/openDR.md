@@ -1,7 +1,7 @@
 ---
 title: "Open Deep Learning Toolkit for Robotics (OpenDR)"
-collection: projects_ongoing
-permalink: /projects/ongoing/opendr
+collection: projects
+permalink: /projects/opendr
 website: https://opendr.eu/
 type: "EU Horizon 2020 program, call H2020-ICT-2018-2020 (Information and Communication Technologies); 2019 – 2022"
 logo: ../../../images/opendr.png
@@ -10,18 +10,47 @@ abstract: "The aim of OpenDR is to develop a modular, open and non-proprietary d
 consortium: "Aristotle University of Thessaloniki, Tampere University of Technology, Aarhus University, Delft University of Technology, Albert-Ludwigs-Universität Freiburg, Cyberbotics Ltd., PAL Robotics S.L., Agro Intelligence ApS"
 layout: archive
 project: "opendr"
+status: "ongoing"
 ---
 {% include base_path %}
 
 {% if page.logo %}
 <p align="center">
-<a href="{{ page.website }}"> <img src="{{  page.logo }}" alt="Logo skipped" /> </a>
+{% if page.website %}
+<a href="{{ page.website }}"> <img src="{{  page.logo }}" alt="Logo skipped" style="max-height:200px"/> </a>
+{% else %}
+<img src="{{  page.logo }}" alt="Logo skipped" />
 {% endif %}
 </p>
+{% endif %}
 
-<p> <strong> <em> Abstract: </em> </strong> {{ page.abstract }} <a href="{{ page.website}}"> More information </a></p>
+<p> <strong> <em> Abstract: </em> </strong> {{ page.abstract }}
+{% if page.webpage %}
+<a href="{{ page.website}}"> <br> More information </a>
+{% endif %}
+</p>
 <p> <strong> Project Type: </strong> {{ page.type }}</p>
-<p> <strong> Consortium: </strong> {{ page.consortium }}</p>
+{% if page.consortium  %}
+<p> <strong> Consortium: </strong> 
+{% assign members = page.consortium | split: ", " %}
+{% for member in members %}
+    {% if member contains "__" %}
+        {% assign memberWithLink  = member | split: "__" %}
+        {% if member != members.last %}
+            <a href="{{ memberWithLink.last }}">{{ memberWithLink.first }} </a>,
+        {% else %}    
+            <a href="{{ memberWithLink.last }}">{{ memberWithLink.first }} </a> 
+        {% endif %}
+    {% else %}
+        {% if member != members.last %}
+            {{ member }},
+        {% else %}    
+            {{ member }}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+{% endif  %}
+
 <p> <strong> Members: </strong>  
 {% assign members = page.members | split: ", " %}
 {% for member in members %}
@@ -47,6 +76,5 @@ project: "opendr"
 {% for c in conferences_by_date reversed %}
 * {{ c.author }}, [**{{ c.title }}**]({{c.permalink}}), *{{ c.avenue}}*, {{c.year}}  {%unless c.video=="" or c.video == null%}  [video]({{c.video}}) {%    endunless %}
 {% endfor %}
-
 
 
