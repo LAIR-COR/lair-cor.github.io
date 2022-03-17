@@ -1,6 +1,7 @@
 ---
 title: "Mert Imre"
-collection: phd
+collection: people
+role: phd
 permalink: /people/mert
 weburl: 'mertimre@github.io'
 image: ../images/mert.jpg

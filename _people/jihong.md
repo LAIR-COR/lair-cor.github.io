@@ -1,6 +1,7 @@
 ---
 title: "Jihong Zhu"
-collection: researcher
+collection: people
+role: researcher
 permalink: /people/jihong
 weburl: 'https://www.tudelft.nl/staff/j.zhu-3/'
 image: ../images/jihong.jpg

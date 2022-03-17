@@ -1,6 +1,7 @@
 ---
 title: "Ravi Prakash"
-collection: researcher
+collection: people
+role: researcher
 permalink: /people/ravi
 weburl: 'https://www.tudelft.nl/en/staff/r.prakash-1/'
 image: ../images/ravi.jpg

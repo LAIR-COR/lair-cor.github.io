@@ -1,0 +1,27 @@
+---
+layout: archive
+title: "People"
+permalink: /people/
+author_profile: false
+---
+{% include base_path %}
+
+
+{% assign profs = site.people | where: "role", "prof" %}
+{% assign researchers = site.people | where: "role", "researcher" %}
+{% assign phd = site.people | where: "role", "phd" %}
+
+<h2> Head </h2>
+{% for prof in profs %}
+<p align="center"> <img src="{{ prof.image }}" alt="{{ prof.title}}"/> </p>
+{% endfor %}
+
+<h2> Researchers </h2>
+{% for researcher in researchers %}
+<p> <img src="{{ researcher.image }}" alt="{{ researcher.title}}" style="width:240px;border-radius:50%;margin:20px" class="img-gallery" /> </p>
+{% endfor %}
+
+<h2> PhD Candidates </h2>
+{% for candidate in phd %}
+<p> <img src="{{ candidate.image }}" alt="{{ candidate.title}}" style="width:240px;border-radius:50%;margin:20px" class="img-gallery" /> </p>
+{% endfor %}

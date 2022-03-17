@@ -1,6 +1,7 @@
 ---
 title: "Anna Mészáros"
-collection: phd
+collection: people
+role: phd
 permalink: /people/anna
 weburl: 'https://www.tudelft.nl/staff/a.meszaros/'
 image: ../images/anna.jpg

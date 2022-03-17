@@ -1,6 +1,7 @@
 ---
 title: "Bas van der Heijden"
-collection: phd
+collection: people
+role:
 permalink: /people/bas
 weburl: 'https://www.tudelft.nl/staff/d.s.vanderheijden/'
 image: ../images/bas.jpg

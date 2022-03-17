@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "People"
-permalink: /people/
+title: "Peoples"
+permalink: /peoples/
 author_profile: false
 ---
 {% include base_path %}

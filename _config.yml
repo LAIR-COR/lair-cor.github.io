@@ -175,13 +175,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  phd:
-    output: true
-    permalink: /:collection/:path/
-  researcher:
-    output: true
-    permalink: /:collection/:path/
-  prof:
+  people:
     output: true
     permalink: /:collection/:path/
   thesis:
@@ -204,8 +198,8 @@ defaults:
     values:
       layout: single
       author_profile: false
-      share: true
-      comments: true
+      share: false
+      comments: false
       
   # _pages
   - scope:

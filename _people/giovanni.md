@@ -1,6 +1,7 @@
 ---
 title: "Giovanni Franzese"
-collection: phd
+collection: people
+role: phd
 permalink: /people/giovanni
 weburl: 'https://www.tudelft.nl/en/staff/g.franzese/'
 image: ../images/giovanni.jpg

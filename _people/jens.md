@@ -1,7 +1,7 @@
 ---
-layout: archive
 title: "Jens Kober"
-collection: prof
+collection: people
+role: prof
 permalink: /people/jens
 weburl: 'http://www.jenskober.de/'
 image: ../images/jens.jpg
