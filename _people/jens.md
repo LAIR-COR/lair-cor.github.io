@@ -1,10 +1,10 @@
 ---
 title: "Jens Kober"
 collection: people
-role: prof
+role: head
 permalink: /people/jens
 weburl: 'http://www.jenskober.de/'
-image: ../images/jens.jpg
+image: ../../images/jens.jpg
 contact: J.Kober_AT_tudelft.nl
 ---
 {% include base_path %}
