@@ -27,29 +27,31 @@ status: "ongoing"
 {% endif %}
 
 <p> <strong> <em> Abstract: </em> </strong> {{ page.abstract }}
-{% if page.webpage %}
-<a href="{{ page.website}}"> <br> More information </a>
-{% endif %}
+    {% if page.webpage %}
+        <a href="{{ page.website}}"> <br> More information </a>
+    {% endif %}
 </p>
+
 <p> <strong> Project Type: </strong> {{ page.type }}</p>
+
 {% if page.consortium  %}
-<p> <strong> Consortium: </strong> 
+<p> <strong> Consortium: </strong>
 {% assign members = page.consortium | split: ", " %}
 {% for member in members %}
-    {% if member contains "__" %}
-        {% assign memberWithLink  = member | split: "__" %}
-        {% if member != members.last %}
-            <a href="{{ memberWithLink.last }}">{{ memberWithLink.first }} </a>,
-        {% else %}    
-            <a href="{{ memberWithLink.last }}">{{ memberWithLink.first }} </a> 
-        {% endif %}
-    {% else %}
-        {% if member != members.last %}
-            {{ member }},
-        {% else %}    
-            {{ member }}
-        {% endif %}
-    {% endif %}
+{% if member contains "__" %}
+{% assign memberWithLink  = member | split: "__" %}
+{% if member != members.last %}
+<a href="{{ memberWithLink.last }}">{{ memberWithLink.first }} </a>,
+{% else %}    
+<a href="{{ memberWithLink.last }}">{{ memberWithLink.first }} </a>
+{% endif %}
+{% else %}
+{% if member != members.last %}
+{{ member }},
+{% else %}    
+{{ member }}
+{% endif %}
+{% endif %}
 {% endfor %}
 {% endif  %}
 
@@ -74,9 +76,8 @@ status: "ongoing"
 </p>
 
 <h2> Publications </h2>
-{% assign conferences_by_date = site.conference | sort: "year" |  where: "project", page.project %}
-{% for c in conferences_by_date reversed %}
-* {{ c.author }}, [**{{ c.title }}**]({{c.permalink}}), *{{ c.avenue}}*, {{c.year}}  {%unless c.video=="" or c.video == null%}  [video]({{c.video}}) {%    endunless %}
+{% assign pubs_by_date = site.publications | sort: "year"%}
+{% for pub in pubs_by_date reversed %}
+    {% include archive-single-pub.html %}
 {% endfor %}
-
 

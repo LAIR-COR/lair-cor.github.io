@@ -1,0 +1,40 @@
+---
+collection: publications
+permalink: /conference/Valletta2021ICRA
+pubtype: conference
+author: "Valletta, Peter and Perez-Dattari, Rodrigo and Kober, Jens"
+title: "Imitation Learning with Inconsistent Demonstrations through Uncertainty-based Data Manipulation"
+avenue: "IEEE International Conference on Robotics and Automation (ICRA)"
+volume: 
+number: 
+pages: 3655--3661
+year: 2021
+bibtex: 
+doi: "10.1109/ICRA48506.2021.9561686"
+file: 
+video: "https://youtu.be/oGYnzlW9Ncw"
+code: 
+website: "http://www.jenskober.de/publications/Valletta2021ICRA.pdf"
+abstract: 
+image: 
+project: 
+---
+{% include base_path %}
+
+{% if page.image %}
+<p align="center">
+{% if page.website %}
+<a href="{{ page.website }}"> <img src="{{  page.image }}" alt="Logo skipped" style="max-height:200px"/> </a>
+{% else %}
+<img src="{{  page.image }}" alt="Logo skipped" />
+{% endif %}
+</p>
+{% endif %}
+
+{% if page.abstract %}
+<p> <strong> <em> Abstract: </em> </strong> {{ page.abstract }}
+    {% if page.webpage %}
+        <a href="{{ page.website}}"> <br> More information </a>
+    {% endif %}
+</p>
+{% endif %}

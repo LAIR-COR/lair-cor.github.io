@@ -1,0 +1,36 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: false
+---
+
+{% include base_path %}
+
+{% assign journals = site.publications | where: "pubtype", "journal" | sort: "year" %}
+{% assign conferences = site.publications | where: "pubtype", "conference" | sort: "year"  %}
+{% assign preprints = site.publications | where: "pubtype", "preprint" | sort: "year"  %}
+{% assign others = site.publications | where: "pubtype", "other" | sort: "year" %}
+
+<h2> Journal Papers </h2>
+{% for post in journals reversed %}
+  {% include archive-single-pub.html %}
+{% endfor %}
+
+<h2> Conference Papers </h2>
+{% for post in conferences reversed%}
+{% include archive-single-pub.html %}
+{% endfor %}
+
+<h2> Preprints </h2>
+{% for post in preprints reversed%}
+{% include archive-single-pub.html %}
+{% endfor %}
+
+<h2> Books, Chapters, and Others </h2>
+{% for post in others reversed %}
+{% include archive-single-pub.html %}
+{% endfor %}
+
+
+
