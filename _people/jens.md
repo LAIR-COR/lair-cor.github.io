@@ -9,8 +9,10 @@ contact: J.Kober_AT_tudelft.nl
 ---
 {% include base_path %}
 
-<p> <img src="../images/jens.jpg" alt="Jens Kober" style="width:240px;border-radius:50%;margin:20px"/> Assoc.Prof. Jens Kober </p>
-
+<div>
+<p align="center"> <img src="../images/jens.jpg" alt="Jens Kober" style="width:240px;border-radius:50%;margin:20px"/> </p>
+<p align="center"> Assoc. Prof. Jens Kober </p>
+</div>
 
 <p> Jens Kober is an associate professor at TU Delft, Netherlands. He is member of the Cognitive Robotics department (CoR), the TU Delft Robotics Institute, and RoboValley. </p>
 
