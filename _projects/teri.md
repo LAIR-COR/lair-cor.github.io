@@ -57,6 +57,8 @@ status: "ongoing"
 
 <p> <strong> Members: </strong>  
 {% assign members = page.members | split: ", " %}
+{% assign pubs_by_date = site.publications | sort: "year"%}
+
 {% for member in members %}
     {% if member contains "__" %}
         {% assign memberWithLink  = member | split: "__" %}
@@ -76,8 +78,10 @@ status: "ongoing"
 </p>
 
 <h2> Publications </h2>
-{% assign pubs_by_date = site.publications | sort: "year"%}
-{% for pub in pubs_by_date reversed %}
+
+{% for post in pubs_by_date reversed %}
+{% if post.project contains page.project %}
     {% include archive-single-pub.html %}
+{% endif %}
 {% endfor %}
 
