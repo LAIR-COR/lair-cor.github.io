@@ -4,9 +4,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
 <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="archive__item-teaser">
-        <img src= "{{ post.image }}" alt="has">
-    </div>
+    <a href="{{ post.permalink }}"> <img src="{{ post.image }}" alt="{{ post.title}}" style="width:300px;border-radius:50%" class="img-gallery"/> </a>
 </article>
 </div>
 

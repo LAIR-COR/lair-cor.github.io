@@ -9,18 +9,32 @@ author_profile: false
 {% assign heads = site.people | where: "role", "head" %}
 {% assign researchers = site.people | where: "role", "researcher" %}
 {% assign phd = site.people | where: "role", "phd" %}
+{% assign alumni = site.people | where: "role", "old" %}
 
 <h2> Head </h2>
-{% for head in heads %}
+{% for post in heads %}
 {% include archive-single-people.html %}
 {% endfor %}
 
 <h2> Researcher </h2>
-{% for researcher in researchers %}
+{% for post in researchers %}
 {% include archive-single-people.html %}
 {% endfor %}
 
 <h2> PhD Candidate </h2>
-{% for candidate in phd %}
+{% for post in phd %}
 {% include archive-single-people.html %}
 {% endfor %}
+
+
+<h2> Previous Members </h2>
+<p>
+{% for person in alumni %}
+        {% if person.weburl %}
+            <a href="{{ person.weburl }}">{{ person.title }}</a>
+        {% else %}
+            {{ person.title }}
+        {% endif %}
+
+{% endfor %}
+</p>
