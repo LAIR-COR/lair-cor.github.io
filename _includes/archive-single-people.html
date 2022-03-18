@@ -2,10 +2,10 @@
 
 {% assign title = post.title | markdownify %}
 
-<div class="{{ include.type | default: "list" }}__item">
-<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <a href="{{ post.permalink }}"> <img src="{{ post.image }}" alt="{{ post.title}}" style="width:300px;border-radius:50%" class="img-gallery"/> </a>
-</article>
-</div>
+    <div class="box">
+        <a href="{{ post.permalink }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery"/>
+        </a>
+    </div>
 
 

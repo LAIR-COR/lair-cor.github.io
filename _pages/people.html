@@ -11,20 +11,45 @@ author_profile: false
 {% assign phd = site.people | where: "role", "phd" %}
 {% assign alumni = site.people | where: "role", "old" %}
 
-<h2> Head </h2>
-{% for post in heads %}
-{% include archive-single-people.html %}
-{% endfor %}
+<div align="center">
+    <h2> Head </h2>
+    <div  class ="image-gallery">
+        <div class="box">
+        {% for post in heads %}
+            <a href="{{ post.permalink }}">
+                <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
+            </a>
+        {% endfor %}
+        </div>
 
-<h2> Researcher </h2>
-{% for post in researchers %}
-{% include archive-single-people.html %}
-{% endfor %}
+    </div>
 
-<h2> PhD Candidate </h2>
-{% for post in phd %}
-{% include archive-single-people.html %}
-{% endfor %}
+</div>
+
+<h2 align="center"> Researchers </h2>
+<div class ="image-gallery">
+    <div class="box">
+        {% for post in researchers %}
+        <a href="{{ post.permalink }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
+        </a>
+    {% endfor %}
+    </div>
+
+</div>
+
+
+
+<h2 align="center"> PhD Candidates </h2>
+<div class ="image-gallery">
+    <div class="box">
+    {% for post in phd %}
+        <a href="{{ post.permalink }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
+        </a>
+    {% endfor %}
+    </div>
+</div>
 
 
 <h2> Previous Members </h2>
