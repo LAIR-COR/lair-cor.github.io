@@ -48,35 +48,35 @@ author_profile: false
 
 <h2> Ongoing Theses </h2>
 {% assign theses_by_date = site.thesis | where: "status", "ongoing" | sort: "date" %}
-{% for thesis in theses_by_date reversed %}
-  *  **{{ thesis.student }}** <br> Mentor(s): {{ thesis.mentors }}  <br> *"{{ thesis.topic }}"*
-{% endfor %}
-  
+<ul>
+    {% for thesis in theses_by_date reversed %}
+    <li>
+        <strong> {{ thesis.student }} </strong> <br>
+        Mentor(s): {{ thesis.mentors }} <br>
+        "<em>{{ thesis.topic }}</em>"
+    </li>
+    {% endfor %}
+
+</ul>
+
 
 <h2> Completed Theses </h2>
-{% assign theses_by_date = site.thesis | where: "status", "completed" |sort: "date" %}
-{% for thesis in theses_by_date reversed %}
-    {% if thesis.urllink%}
-        * [{{ thesis.topic }}]({{ thesis.urllink }}) <br> Student: {{ thesis.student }} <br> Mentor(s): <em>{{ thesis.mentors }}</em>
-    {% else %}
-        * {{ thesis.topic }} <br> Student: {{ thesis.student }} <br> Mentor(s): <em>{{ thesis.mentors }}</em>
-    {% endif %}
-{% endfor %}
 
-<!-- <table>
-   <tr>
-      <td> Student </td>
-      <td> Thesis Topic </td>
-      <td> Mentor(s) </td>
-   </tr>
-   {% for thesis in site.thesis_completed %}
-   <tr>
-      <td> {{ thesis.student }}</td>
-      <td> 
-          {{ thesis.topic }} 
-      </td>
-      <td> {{ thesis.mentors }}</td>
-   </tr>   
-   {% endfor %}
-</table>
--->
+{% assign theses_by_date = site.thesis | where: "status", "completed" | sort: "date" %}
+<ul>
+    {% for thesis in theses_by_date reversed %}
+        {% if thesis.urllink%}
+            <li>
+                <strong> {{ thesis.student }} </strong> <br>
+                <a href="{{ thesis.urllink }}" /> "<em>{{ thesis.topic }}</em>"</a> <br>
+                Mentor(s): {{ thesis.mentors }} <br>
+            </li>
+        {% else %}
+            <li>
+                <strong> {{ thesis.student }} </strong> <br>
+                "<em>{{ thesis.topic }}</em>" <br>
+                Mentor(s): {{ thesis.mentors }} <br>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
