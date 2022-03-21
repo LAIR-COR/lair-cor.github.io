@@ -4,6 +4,8 @@ title: "People"
 permalink: /people/
 author_profile: false
 ---
+<body>
+
 {% include base_path %}
 
 {% assign heads = site.people | where: "role", "head" %}
@@ -15,11 +17,11 @@ author_profile: false
     <h2> Head</h2>
     <div  class ="image-gallery">
         <div class="box">
-        {% for post in heads %}
+            {% for post in heads %}
             <a href="{{ post.permalink }}" style="width: auto">
                 <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
             </a>
-        {% endfor %}
+            {% endfor %}
         </div>
 
     </div>
@@ -33,7 +35,7 @@ author_profile: false
         <a href="{{ post.permalink }}" style="display: inline-block;" >
             <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
         </a>
-    {% endfor %}
+        {% endfor %}
     </div>
 
 </div>
@@ -43,23 +45,23 @@ author_profile: false
 <h2 align="center"> PhD Candidates </h2>
 <div class ="image-gallery">
     <div class="box">
-    {% for post in phd %}
+        {% for post in phd %}
         <a href="{{ post.permalink }}" style="display: inline-block;" >
             <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
         </a>
-    {% endfor %}
+        {% endfor %}
     </div>
 </div>
 
 
 <h2> Previous Members </h2>
 <p>
-{% for person in alumni %}
-        {% if person.weburl %}
-            <a href="{{ person.weburl }}">{{ person.title }}</a>
-        {% else %}
-            {{ person.title }}
-        {% endif %}
+    {% for person in alumni %}
+    {% if person.weburl %}
+    <a href="{{ person.weburl }}">{{ person.title }}</a>
+    {% else %}
+    {{ person.title }}
+    {% endif %}
 
-{% endfor %}
+    {% endfor %}
 </p>
