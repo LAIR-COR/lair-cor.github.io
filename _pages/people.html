@@ -13,9 +13,9 @@ author_profile: false
 {% assign phd = site.people | where: "role", "phd" %}
 {% assign alumni = site.people | where: "role", "old" %}
 
-<div align="center">
+<div>
     <h2> Head</h2>
-    <div  class ="image-gallery">
+    <div align="center" class ="image-gallery">
         <div class="box">
             {% for post in heads %}
             <a href="{{ post.permalink }}" style="width: auto">
@@ -28,7 +28,7 @@ author_profile: false
 
 </div>
 
-<h2 align="center"> Researchers and PostDocs</h2>
+<h2> Researchers and PostDocs</h2>
 <div class ="image-gallery">
     <div class="box">
         {% for post in researchers %}
@@ -42,7 +42,7 @@ author_profile: false
 
 
 
-<h2 align="center"> PhD Candidates </h2>
+<h2> PhD Candidates </h2>
 <div class ="image-gallery">
     <div class="box">
         {% for post in phd %}
