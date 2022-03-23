@@ -5,5 +5,6 @@ role: researcher
 permalink: /people/zlatan
 weburl: 'https://www.tudelft.nl/en/staff/z.ajanovic/'
 image: ../images/zlatan.jpg
-contact: Z.Ajanovic@tudelft.nl
+stamped_image: ../images/zlatan_stamped.png
+contact: Z.Ajanovic_AT_tudelft.nl
 ---

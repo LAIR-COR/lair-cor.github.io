@@ -19,7 +19,7 @@ author_profile: false
         <div class="box">
             {% for post in heads %}
             <a href="{{ post.permalink }}" style="width: auto">
-                <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
+                <img src="{{ post.stamped_image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
             </a>
             {% endfor %}
         </div>
@@ -33,7 +33,7 @@ author_profile: false
     <div class="box">
         {% for post in researchers %}
         <a href="{{ post.permalink }}" style="display: inline-block;" >
-            <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
+            <img src="{{ post.stamped_image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
         </a>
         {% endfor %}
     </div>
@@ -47,7 +47,7 @@ author_profile: false
     <div class="box">
         {% for post in phd %}
         <a href="{{ post.permalink }}" style="display: inline-block;" >
-            <img src="{{ post.image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
+            <img src="{{ post.stamped_image }}" alt="{{ post.title }}"  class="img-gallery" style="width:240px;border-radius:50%;margin:10px"/>
         </a>
         {% endfor %}
     </div>

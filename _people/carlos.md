@@ -5,7 +5,8 @@ role: researcher
 permalink: /people/carlos
 weburl: 'https://scholar.google.nl/citations?user=4cnt9iYAAAAJ&hl=en'
 image: ../images/carlos.jpg
-contact: C.E.CeleminPaez@tudelft.nl
+stamped_image: ../images/carlos_stamped.png
+contact: C.E.CeleminPaez_AT_tudelft.nl
 layout: archive
 ---
 {% include base_path %}
