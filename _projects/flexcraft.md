@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/flexcraft
 website: https://flexcraftprogram.com/
 type: "NWO Perspectief; 2019-2022"
-logo: ../../../images/flexcraft.png
+logo: /images/flexcraft.png
 members: "ir. Padmaja Kulkarni__https://www.tudelft.nl/en/3me/departments/cognitive-robotics-cor/people/, ir. Rodrigo J. Pérez-Dattari__https://www.tudelft.nl/staff/s.p.mulders/, Dr.-Ing. Jens Kober__http://www.jenskober.de, prof.dr. Robert Babuška__http://www.robertbabuska.com/"
 abstract: "<p> Food production must be as hygienic, efficient and sustainable as possible. Furthermore, fewer people are willing to do tedious and heavy work in warm greenhouses or in refrigerated rooms where chicken products are processed, for example. Robots can provide a solution to this problem if they can deal with the considerable variations in shape, size and hardness of different food products. This is still challenging. The programme FlexCRAFT will develop new robot technology for such purposes as the automatic harvesting of tomatoes, for example. The robotics developed must also help with the processing of foodstuffs. Examples of this include the processing and packaging of chicken products, but also neatly packaging bags of crisps and packets of biscuits in boxes of varying sizes. </p>
 <p>The Netherlands is the second biggest exporter of agro-food products worldwide and the third biggest supplier of technology for the agro-food sector. This programme will contribute to strengthening the competitive position of the Netherlands in these sectors. </p>"

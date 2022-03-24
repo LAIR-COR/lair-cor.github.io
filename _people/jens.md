@@ -4,8 +4,8 @@ collection: people
 role: head
 permalink: /people/jens
 weburl: 'http://www.jenskober.de/'
-image: ../../images/jens.jpg
-stamped_image: ../images/jens_stamped.png
+image: /images/jens.jpg
+stamped_image: /images/jens_stamped.png
 contact: J.Kober_AT_tudelft.nl
 ---
 {% include base_path %}

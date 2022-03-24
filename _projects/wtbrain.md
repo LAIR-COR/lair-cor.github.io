@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/wtbrain
 website: 
 type: "TKI Wind op Zee; 2017-2020"
-logo: ../../../images/wtbrain.png
+logo: /images/wtbrain.png
 members: "ir. Sebastiaan P. Mulders__https://www.tudelft.nl/staff/s.p.mulders/ Dr.-Ing. Jens Kober__www.jenskober.de, prof.dr.ir. Jan-Willem van Wingerden__https://www.tudelft.nl/en/3me/departments/delft-center-for-systems-and-control/people/professors/profdrir-jw-van-wingerden-jan-willem/"
 abstract: "<p> <strong> Background </strong> Wind turbines behave well in a lot of different wind conditions, in the lightest breeze and the heaviest storms. In the end, it boils down to producing energy at the lowest possible cost. That is why the system that controls the response of a wind turbine to the wind, must keep finding a balance between producing energy and the loads acting on the wind turbine. This project focusses on finding new ways to finding this balance. These new ways are becoming available due to the rapid scientific progress in the fields of (deep) machine learning and the use of, amongst other things, neural networks. By applying these methods in wind turbine control, we expect to realise a 5-10% design equivalent load reduction.</p>
 <p> <strong>Goal/ objective </strong> The goal of the project is to improve the wind turbine controller and its design process. This will be achieved by using machine learning (ML) to tune the controller in the design phase. The controller will contain conventional estimators and controller structures. Neural or Bayesian networks (hereafter: artificial networks (AN)) will be used to search for opportunities to further improve the conventional controller design.</p>

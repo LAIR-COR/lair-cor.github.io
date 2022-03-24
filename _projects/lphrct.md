@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/lphrct
 website: 
 type: "Industry project (Honda Research Institute Europe GmbH, HTSM PPS-toeslag); 2017-2021"
-logo: ../../../images/lphrct.png
+logo: /images/lphrct.png
 members: "ir. Linda van der Spaa__https://www.tudelft.nl/staff/l.f.vanderspaa/, Dr. Jihong Zhu__https://jihong-zhu.github.io/, Dr.-Ing. Jens Kober__http://www.jenskober.de, Dr.-Ing. Michael Gienger__https://www.honda-ri.de/people/"
 abstract: "<p> Human-robot interaction and collaboration is of fundamental importance for any robot leaving the safety of fences on a highly-structured factory floor: service and care scenarios, medical applications, offshore, maintenance and inspection, as well as industrial assembly. In this project, we will develop new concepts and techniques for robot learning that endow robots with the capability to physically interact and collaborate with humans. In particular, we will consider tasks related to joint handling of large objects, i.e., jointly transporting and manipulating them. Examples include transporting and assembling light traverses, or changing tires on a car. </p>"
 consortium: 
