@@ -50,18 +50,18 @@ project: "lphrct"
 
 <div align="center" style="margin-top: 50px">
 {% if page.doi %}
-<button name="button" onclick="{{ page.doi }}" style="height:40px;width:100px">DOI</button>
+<button name="button" onclick="window.location.href='{{ page.doi }}'" style="height:40px;width:100px">DOI</button>
 {% endif %}
 {% if page.file %}
-<button name="button" onclick="{{ page.file }}" style="height:40px;width:100px">PDF</button>
+<button name="button" onclick="window.location.href='{{ page.file }}'" style="height:40px;width:100px">PDF</button>
 {% endif %}
 {% if page.video %}
-<button name="button" onclick="{{ page.video }}" style="height:40px;width:100px">Video</button>
+<button name="button" onclick="window.location.href='{{ page.video }}'" style="height:40px;width:100px">Video</button>
 {% endif %}
 {% if page.code %}
-<button name="button" onclick="{{ page.code }}" style="height:40px;width:100px">Code</button>
+<button name="button" onclick="window.location.href='{{ page.code }}'" style="height:40px;width:100px">Code</button>
 {% endif %}
 {% if page.website %}
-<button name="button" onclick="{{ page.website }}" style="height:40px;width:100px">Site</button>
+<button name="button" onclick="window.location.href='{{ page.website }}'" style="height:40px;width:100px">Site</button>
 {% endif %}
 </div>
