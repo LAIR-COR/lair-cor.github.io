@@ -2,4 +2,4 @@ A Github Pages template for academic websites. This was forked (then detached) b
 The further information and instructions on how to use the template can be found at https://academicpages.github.io/
 
 
-For LAIR members, a basic guide to add content can be found in drafts folder named readme.txt
+For LAIR members, a basic guide to add content can be found in drafts folder named [readme](https://github.com/LAIR-COR/lair-cor.github.io/blob/master/_drafts/readme.txt)
